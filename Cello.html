@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>INFO 0311</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      margin: auto;
+ }
+	table, th, td {
+    border: 1px solid black;
+}
+h3 {
+    text-align: center;
+}
+   </style>
+</head>
+<body>
+
+<script>
+ <script>
+
+function MM_controlSound(x, _sndObj, sndFile) { //v3.0
+var i, method = "", sndObj = eval(_sndObj);
+if (sndObj != null) {
+if (navigator.appName == 'Netscape') method = "play";
+else {
+if (window.MM_WMP == null) {
+window.MM_WMP = false;
+for(i in sndObj) if (i == "ActiveMovie") {
+window.MM_WMP = true; break;
+} }
+if (window.MM_WMP) method = "play";
+else if (sndObj.FileName) method = "run";
+} }
+if (method) eval(_sndObj+"."+method+"()");
+else window.location = sndFile;
+}
+//-->
+   </script>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+      <div class="navbar-header">
+      <a class="navbar-brand" href="#">Pan - Cello</a>
+    </div>
+    <ul class="nav navbar-nav">
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Four Cello<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Note Sheet</a></li>
+          <li><a href="#">Song clip</a></li>
+      		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tenor Bass<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Note Sheet</a></li>
+          <li><a href="#">Song clip</a></li>
+        </ul>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">High Tenor<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Note Sheet</a></li>
+          <li><a href="#">Song clip</a></li>
+        </ul>
+		
+        </ul>
+	</nav>
+	<div class="container">
+  <br>
+  <div class="row">
+  <div class="col-sm-8">
+
+     </div>
+	
+	<div class="container">
+	<div class="col-sm-1">
+	  <button type="button" class="btn btn-primary btn-md" onclick="play()">
+	 <audio id="audio" src="tcD#4.mp3" ></audio>D#4</button> 
+	  <button type="button" class="btn btn-primary btn-md" onclick="play()">
+	 <audio id="audio" src="tcF#3.mp3" ></audio>F#3</button> 
+
+	 </div>
+
+	<div class="col-sm-1">
+	  <button type="button" class="btn btn-primary btn-md" onclick="play()">
+	 <audio id="audio" src="tcEb3.mp3" ></audio>Eb3</button> 
+	  </div>
+
+	<div class="col-sm-1">
+	  <button type="button" class="btn btn-primary btn-md" onclick="play()">
+	 <audio id="audio" src="tcA3.mp3" ></audio>A3</button> 
+	  <button type="button" class="btn btn-primary btn-md" onclick="play()">
+	 <audio id="audio" src="tcC3.mp3" ></audio>C3</button> 
+	  <button type="button" class="btn btn-primary btn-md" onclick="play()">
+	 <audio id="audio" src="tcC4.mp3" ></audio>C4</button>  
+	</div>
+
+	
+	</div>
+
+	</div>
+
+ 
+<div class="row">
+
+  <div class="col-sm-8">
+<table style="width:30%">
+<tr>
+	<th><h3><a href="HighTenor.html">High Tenor</h3></th>
+
+	<th><h3><a href="TenorBass.html">TenorBass</h3></th>
+</tr>
+</table>
+     <div class="jumbotron"> 
+<img src="cellochart.gif" alt="" usemap="#Map" />
+<map name="Map" id="Map">
+    <area alt="" title="Eb3"a href="#" onClick="MM_controlSound('play','document.CS1022563046202','tcEb3.mp3')" shape="poly" coords="220,12,277,17,262,41,223,42" />
+    <area alt="" title="D#4"a href="#" onClick="MM_controlSound('play','document.CS1022563046202','tcF#4.mp3')" shape="poly" coords="271,44,292,29,319,68,280,74" />
+    <area alt="" title="A3"a href="#" onClick="MM_controlSound('play','document.CS1022563046202','tcA3.mp3')" shape="poly" coords="280,83,311,90,299,132,276,116" />
+    <area alt="" title="C3"a href="#" onClick="MM_controlSound('play','document.CS1022563046202','tcC3.mp3')" shape="poly" coords="221,132,269,130,277,154,213,160" />
+    <area alt="" title="C4"a href="#" onClick="MM_controlSound('play','document.CS1022563046202','tcC4.mp3')" shape="poly" coords="167,92,193,91,209,116,184,140" />
+    <area alt="" title="F#3"a href="#" onClick="MM_controlSound('play','document.CS1022563046202','tcF#3.mp3')" shape="poly" coords="191,31,168,74,198,77,214,49" />
+
+</map>
+ 	 </div>     
+	</div>
+     </div>
+
+
+ </div>
+
+
+</body>
+</html>
